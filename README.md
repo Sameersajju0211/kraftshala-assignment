@@ -1,25 +1,50 @@
-for install dependencies => npm i
-for run project => npm start
-Introduction This Weather App provides real-time weather information for the user's current location and allows users to search for weather data in other cities or zip codes. The app displays the current temperature, weather conditions, date, time, and additional details such as sunrise and sunset times.
+Weather App Setup Instructions
+This Weather App delivers real-time weather updates for your current location and enables searches for weather information in other cities or zip codes. It showcases the current temperature, weather conditions, date, time, and additional details such as sunrise and sunset times.
 
-Features Real-time weather updates for the user's current location. Search functionality to find weather data for any city or zip code. Displays temperature in Celsius and Fahrenheit. Shows current date and time. Includes additional weather details like humidity, sunrise, and sunset times. Responsive design for use on various devices. Technologies Used React: JavaScript library for building user interfaces. Axios: Promise-based HTTP client for making API requests. OpenWeather API: Provides weather data. React Live Clock: Real-time clock component. React Animated Weather: Animated weather icons. Getting Started Follow these instructions to set up the project on your local machine.
-Prerequisites Node.js and npm installed on your machine. OpenWeather API key. Installation Clone the repository:
+Features
+Real-time weather updates for the current location.
+Search functionality for weather data by city or zip code.
+Temperature display in both Celsius and Fahrenheit.
+Current date and time display.
+Additional weather details including humidity, sunrise, and sunset times.
+Responsive design for multiple devices.
+Technologies Used
+React: JavaScript library for building user interfaces.
+Axios: Promise-based HTTP client for making API requests.
+OpenWeather API: Source for weather data.
+React Live Clock: Real-time clock component.
+React Animated Weather: Animated weather icons.
+Getting Started
+Follow these steps to set up the project on your local machine.
 
-bash Copy code git clone https://github.com/yourusername/weather-app.git cd weather-app Install dependencies:
+Prerequisites
+Ensure Node.js and npm are installed on your machine.
+Obtain an OpenWeather API key.
+Installation
+Clone the repository:
 
-bash npm install
 
-Create a file named weatherAPI.js in the src directory and add your OpenWeather API key:
+git clone https://github.com/yourusername/weather-app.git
+cd weather-app
+Install dependencies:
 
+
+npm install
+Add your OpenWeather API key:
+
+Create a file named weatherAPI.js in the src directory.
+Add the following content to the file:
 javascript
 
-// src/api/weatherAPI.js const apiKeys = { key: 'YOUR_API_KEY_HERE', base: 'https://api.openweathermap.org/data/2.5/', };
+// src/api/weatherAPI.js
+const apiKeys = {
+  key: 'YOUR_API_KEY_HERE',
+  base: 'https://api.openweathermap.org/data/2.5/',
+};
 
-export default apiKeys; Start the development server:
+export default apiKeys;
+Start the development server:
 
-bash npm start
 
-Usage Open the app in your web browser. By default, the app will detect your current location and display the weather information. Use the input field to enter a city name or zip code and click "Search" to get the weather data for the specified location.
-
-see the live demo of weather app : https://kraftshala-frontend-intern-harikrishna-avt6.vercel.app/
-
+Open the app in your web browser. By default, it will detect your current location and display the weather information.
+Use the input field to enter a city name or zip code and click "Search" to retrieve weather data for the specified location.
